@@ -15,6 +15,7 @@ const solveProblem = async () =>  {
     setProblem (problemNumber)
     
     const {problem} = await import (`./problems/${problemNumber}.js`)
+    console.clear();
     problem(input);
 
 }
